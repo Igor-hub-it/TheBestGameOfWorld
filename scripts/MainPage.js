@@ -12,7 +12,6 @@ btnCloseNewGameModalWindow.addEventListener('click', closeNewGameModalWindow)
 btnJoinModalWindow.addEventListener('click', openJoinModalWindow)
 btnCloseJoinModalWindow.addEventListener('click', closeJoinModalWindow)
 
-
 function openNewGameModalWindow() {
   modalWindowCreateNewGame.style.display = "inline"
 }

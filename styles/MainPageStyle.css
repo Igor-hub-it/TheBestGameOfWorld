@@ -67,7 +67,7 @@ main {
   background: #f0f6f0;
   border: solid 4px #222323;
   border-radius: 30px;
-  display: none ;
+  display: none;
 }
 
 .modal-window-creating_close {
@@ -114,6 +114,7 @@ main {
   background: #222323;
   color: #f0f6f0;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .modal-window_join-to-game {
