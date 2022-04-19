@@ -70,7 +70,7 @@ main {
   display: none ;
 }
 
-.modal-window_close {
+.modal-window-creating_close {
   height: 80px;
   width: 80px;
   position: relative;
@@ -84,13 +84,13 @@ main {
   text-align: center;
 }
 
-.modal-window_title {
+.modal-window-creating_title {
   margin-top: 60px;
   text-align: center;
   font-size: 40px;
 }
 
-.modal-window_buttons {
+.modal-window-creating_buttons {
   width: 80%;
   height: auto;
   margin: auto;
@@ -101,7 +101,7 @@ main {
   top: 35%;
 }
 
-.modal-window_sign-in, .modal-window_create-game {
+.modal-window-creating_sign-in, .modal-window-creating_create-game {
   height: 90px;
   width: 80%;
   margin: auto;
@@ -114,6 +114,95 @@ main {
   background: #222323;
   color: #f0f6f0;
   cursor: pointer;
+}
+
+.modal-window_join-to-game {
+  width: 80%;
+  height: 900px;
+  margin: auto;
+  position: absolute;
+  top: 700px;
+  left: 10%;
+  z-index: 1;
+  background: #f0f6f0;
+  border: solid 4px #222323;
+  border-radius: 30px;
+  display: none ;
+}
+
+.modal-window-join_close {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  top: 20px;
+  left: calc(100% - 90px);
+  border-radius: 5px;
+  background: #222323;
+  cursor: pointer;
+  color: #f0f6f0;
+  font-size: 70px;
+  text-align: center;
+}
+
+.modal-window-join_title {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.modal-window-join_input-name {
+  width: 80%;
+  height: 90px;
+  margin-top: 90px;
+  border-radius: 20px;
+  font-size: 40px;
+}
+
+.join-to-game {
+  height: 90px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 20%;
+  border: solid 3px #222323;
+  border-radius: 20px;
+  font-size: 30px;
+  background: #f0f6f0;
+  color: #222323;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.modal-window-join_buttons {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20%;
+  position: relative;
+  top: 30%;
+}
+
+.modal-window-join_sign-in, .modal-window-join_create-game {
+  height: 90px;
+  /* width: 40%; */
+  /* margin: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 3px #222323;
+  border-radius: 20px;
+  font-size: 30px;
+  background: #f0f6f0;
+  color: #222323;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 }
 
 .content_top {
