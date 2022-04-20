@@ -14,4 +14,3 @@ function openDescriptionModalWindow() {
 function closeDescriptionModalWindow() {
   descriptionModalWindow.style.display = "none"
 }
-

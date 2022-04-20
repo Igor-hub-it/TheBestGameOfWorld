@@ -6,11 +6,18 @@ let btnJoinModalWindow = document.querySelector(".button_join-game")
 let modalwindowJoinToGame = document.querySelector(".modal-window_join-to-game")
 let btnCloseJoinModalWindow = document.querySelector(".modal-window-join_close")
 
+let btnCloseRegModalWindow = document.querySelector(".log-in_close")
+let modalWindowReg = document.querySelector(".modal-window_log-in")
+let btnlogIn = document.querySelector(".log_in")
+
 btnCreateNewGame.addEventListener('click', openNewGameModalWindow)
 btnCloseNewGameModalWindow.addEventListener('click', closeNewGameModalWindow)
 
 btnJoinModalWindow.addEventListener('click', openJoinModalWindow)
 btnCloseJoinModalWindow.addEventListener('click', closeJoinModalWindow)
+
+btnlogIn.addEventListener('click', openRegModalWindow)
+btnCloseRegModalWindow.addEventListener('click', closeRegModalWindow)
 
 function openNewGameModalWindow() {
   modalWindowCreateNewGame.style.display = "inline"
@@ -26,4 +33,12 @@ function openJoinModalWindow() {
 
 function closeJoinModalWindow() {
   modalwindowJoinToGame.style.display = "none"
+}
+
+function openRegModalWindow() {
+  modalWindowReg.style.display = "inline"
+}
+
+function closeRegModalWindow() {
+  modalWindowReg.style.display = "none"
 }
