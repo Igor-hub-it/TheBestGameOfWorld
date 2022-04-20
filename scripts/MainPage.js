@@ -6,39 +6,49 @@ let btnJoinModalWindow = document.querySelector(".button_join-game")
 let modalwindowJoinToGame = document.querySelector(".modal-window_join-to-game")
 let btnCloseJoinModalWindow = document.querySelector(".modal-window-join_close")
 
-let btnCloseRegModalWindow = document.querySelector(".log-in_close")
-let modalWindowReg = document.querySelector(".modal-window_log-in")
 let btnlogIn = document.querySelector(".log_in")
+let modalWindowReg = document.querySelector(".modal-window_log-in")
+let btnCloseRegModalWindow = document.querySelector(".log-in_close")
+
+let btnOpenAuthorizationMW = document.querySelector(".sign_in")
+let AuthorizationMW = document.querySelector(".modal-window_sign-in")
+let btnCloseAuthorizationMW = document.querySelector(".sign-in_close")
 
 btnCreateNewGame.addEventListener('click', openNewGameModalWindow)
-btnCloseNewGameModalWindow.addEventListener('click', closeNewGameModalWindow)
+btnCloseNewGameModalWindow.addEventListener('click', closeModalWindows)
 
 btnJoinModalWindow.addEventListener('click', openJoinModalWindow)
-btnCloseJoinModalWindow.addEventListener('click', closeJoinModalWindow)
+btnCloseJoinModalWindow.addEventListener('click', closeModalWindows)
 
 btnlogIn.addEventListener('click', openRegModalWindow)
-btnCloseRegModalWindow.addEventListener('click', closeRegModalWindow)
+btnCloseRegModalWindow.addEventListener('click', closeModalWindows)
 
+btnOpenAuthorizationMW.addEventListener('click', openAuthModalWindow)
+btnCloseAuthorizationMW.addEventListener('click', closeModalWindows)
+
+// модалка для создания новой игры
 function openNewGameModalWindow() {
   modalWindowCreateNewGame.style.display = "inline"
 }
 
-function closeNewGameModalWindow() {
-  modalWindowCreateNewGame.style.display = "none"
-}
-
+// модалка для присоединения к существующей игре
 function openJoinModalWindow() {
   modalwindowJoinToGame.style.display = "inline"
 }
 
-function closeJoinModalWindow() {
-  modalwindowJoinToGame.style.display = "none"
-}
-
+// модалка для регистрации
 function openRegModalWindow() {
   modalWindowReg.style.display = "inline"
 }
 
-function closeRegModalWindow() {
-  modalWindowReg.style.display = "none"
+// модалка для авторизации
+function openAuthModalWindow() {
+  AuthorizationMW.style.display = "inline"
 }
+
+function closeModalWindows() {
+  modalwindowJoinToGame.style.display = "none"
+  AuthorizationMW.style.display = "none"
+  modalWindowReg.style.display = "none"
+  modalWindowCreateNewGame.style.display = "none"
+} 
